@@ -17,11 +17,12 @@ from sklearn.metrics import accuracy_score
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/Kaushik/Desktop/multiple-disease prediction mini project sem 6/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/Kaushik/Desktop/multiple-disease prediction mini project sem 6/heart_disease_model.sav','rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/Kaushik/Desktop/multiple-disease prediction mini project sem 6/parkinsons_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
  
@@ -235,7 +236,7 @@ if (selected == "Stroke Prediction"):
     
     
     # Load the dataset
-    data = pd.read_csv('C:/Users/Kaushik/Desktop/multiple-disease prediction mini project sem 6/healthcare-dataset-stroke-data.csv')
+    data = pd.read_csv('healthcare-dataset-stroke-data.csv')
     
     
     # code for Prediction
